@@ -10,11 +10,11 @@ public class MyScanner{
 		int b = scanner.nextInt();
 		
 			if (a > b) {
-			System.out.println("You guessed wrong, your number is too low.");
+			System.out.println("You guessed wrong, your number is too low, guess higher.");
 			} else if (a < b) {
-			System.out.println("You guessed wrong, your number is too high.");
+			System.out.println("You guessed wrong, your number is too high, guess lower.");
 			} else if (a == b) {
-			System.out.println("You guessed right!");
+			System.out.println("You guessed right! " + "You took " + i + " times to find the number");
 			} else {
 			System.out.println("You cheated");
 			}
