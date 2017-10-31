@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class MyScanner{
+	public static void main(String[] args) {
+		int a = (int)(Math.random()*101);
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Guess a number from 1 to 100.");
+		int b = scanner.nextLine();
+		
+		if (a > b) {
+		System.out.println("You guessed wrong, your number is too low.");
+		} else if (a < b) {
+		System.out.println("You guessed wrong, your number is too high.");
+		} else if (a == b) {
+		System.out.println("You guessed right!");
+		} else {
+		System.out.println("You cheated");
+		}
+		
+	}
+}
