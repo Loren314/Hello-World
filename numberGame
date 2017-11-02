@@ -2,19 +2,24 @@ import java.util.Scanner;
 
 public class MyScanner{
 	public static void main(String[] args) {
-		int a = (int)(Math.random()*101);
+		int target = (int)(Math.random()*100 +1);
 		Scanner scanner = new Scanner(System.in);
+		int times = 1;
+		boolean guessWrong = true;
+		while (guessWrong) {
 		
-		for (int i = 0; i<10; i++) {
 		System.out.println("Guess a number from 1 to 100: ");
-		int b = scanner.nextInt();
+		int guess = scanner.nextInt();
 		
-			if (a > b) {
+			if (target > guess) {
 			System.out.println("You guessed wrong, your number is too low, guess higher.");
-			} else if (a < b) {
+			times++;
+			} else if (target < guess) {
 			System.out.println("You guessed wrong, your number is too high, guess lower.");
-			} else if (a == b) {
-			System.out.println("You guessed right! " + "You took " + i + " times to find the number");
+			times++;
+			} else if (target == guess) {
+			System.out.println("You guessed right! " + "You took " + times + " times to find the number");
+			guessWrong = false;
 			} else {
 			System.out.println("You cheated");
 			}
