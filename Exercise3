@@ -3,19 +3,37 @@ import java.util.Scanner;
 public class ExampleMinNumber{
 	public static void main(String[] args) {
 	Scanner scanner = new Scanner(System.in);
-	System.out.println("Type a value for a:");
-	int a = scanner.nextInt();
-	System.out.println("Type a value for b:");
-	int b = scanner.nextInt();
-		int c = minFunction(a, b);
-		System.out.println("Minimum Value = " + c);
+	System.out.println("Type a value for the first input value:");
+	int input1 = scanner.nextInt();
+	System.out.println("Type a value for the second input value:");
+	int input2 = scanner.nextInt();
+	System.out.println("Type a value that corresponds to a mathematical expression (1=addition, 2=subtraction, 3=multiplication, 4=division): ");
+	int c = scanner.nextInt();
+//	System.out.println("Type a mathematical operator: ");
+//	String operator = scanner.nextLine();
+//		int c = minFunction(a, b);
+//		System.out.println("Minimum Value = " + c);
+	int expression;
+	switch(c) {
+	case 1: expression = input1+input2;
+	break;
+	case 2: expression = input1-input2;
+	break;
+	case 3: expression = input1*input2;
+	break;
+	case 4: expression = input1/input2;
+	break;
+	default: expression = input1+input2;
+	break;
 	}
-	public static int minFunction(int n1, int n2) {
+	System.out.println(expression);
+/*	public static int minFunction(int n1, int n2) {
 		int min;
 		if (n1 > n2)
 		min = n2;
 		else
 		min = n1;
 		return min;
-	}
+	}*/
+}
 }
