@@ -20,3 +20,58 @@ public class Puppy{
 	System.out.println("Variable Value: " + myPuppy.puppyAge);
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+public class Kitten{
+	public Kitten(String name){
+		System.out.println("Name chosen is: " + name);
+	}
+	int kittenAge;
+	public void setAge( int age ){
+		kittenAge = age;
+	}
+	public int getAge( ){
+		System.out.println("Kitten's age is: " + kittenAge);
+		return kittenAge;
+	}
+	
+
+	public static void main(String []args){
+	Kitten myKitten = new Kitten("Cat");
+	myKitten.setAge(3);
+	myKitten.getAge();
+	System.out.println("Variable Value: " + myKitten.kittenAge);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+public class PetNursery{
+
+	public static void main(String []args){
+
+
+
+	}
+}
