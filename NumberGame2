@@ -9,15 +9,18 @@ public class MyScanner{
 		int goal = scanner.nextInt();
 		int guess = (max+min)/2;
 		boolean guessWrong = true;
-		while (guessWrong=true){
+		while (guessWrong){
 		
 		if (guess!=goal) {
 		System.out.println(guess);
 		guess = (max+min)/2;
 		guessWrong = true;
 		}
-		else {
+		else if(guess==goal) {
 		System.out.println("The goal is: " + guess);
+		guessWrong = false;
+		}
+		else {
 		
 		
 		}
