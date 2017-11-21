@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class MyScanner{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int max = 100;
+		int min = 1;
+		System.out.println("What is a number from " + min + " to " + max);
+		int goal = scanner.nextInt();
+		int guess = (max+min)/2;
+		boolean guessWrong = true;
+		while (guessWrong=true){
+		
+		if (guess!=goal) {
+		System.out.println(guess);
+		guess = (max+min)/2;
+		guessWrong = true;
+		}
+		else {
+		System.out.println("The goal is: " + guess);
+		
+		
+		}
+		}
+		System.out.println("Your number is: " + guess);
+		
+/*		int target = (int)(Math.random()*100 +1);
+		Scanner scanner = new Scanner(System.in);
+		int times = 1;
+		boolean guessWrong = true;
+		while (guessWrong) {
+		
+		System.out.println("Guess a number from 1 to 100: ");
+		int guess = scanner.nextInt();
+		
+			if (target > guess) {
+			System.out.println("You guessed wrong, your number is too low, guess higher.");
+			times++;
+			} else if (target < guess) {
+			System.out.println("You guessed wrong, your number is too high, guess lower.");
+			times++;
+			} else if (target == guess) {
+			System.out.println("You guessed right! " + "You took " + times + " times to find the number");
+			guessWrong = false;
+			} else {
+			System.out.println("You cheated");
+			}
+		}*/
+	}
+}
