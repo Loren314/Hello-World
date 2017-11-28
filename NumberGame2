@@ -51,3 +51,165 @@ public class MyScanner{
 		}*/
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import java.util.Scanner;
+
+public class MyScanner{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int max = 100;
+		int min = 1;
+		System.out.println("What is a number from " + min + " to " + max);
+		int goal = scanner.nextInt();
+		int guess = (int)Math.ceil((max+min)/2);
+		boolean guessWrong = true;
+		
+		while (guess!=goal) {
+		guess = (int)Math.ceil((max+min)/2);
+
+	//	System.out.println(guess);
+		if (guess>goal) {
+		min = guess;//min++;//(int)Math.ceil((max+min)/2);
+		
+		break;
+		}
+		else {
+		max = guess;//max--;//(int)Math.ceil((max+min)/2);
+		break;
+		}
+		//guessWrong = true;
+		}
+	//	while (guess<goal) {
+	//	System.out.println(guess);
+	//	max = (max+min)/2;
+	//	guess = (max+min)/2;
+	//	guessWrong = true;
+	//	}
+		while (guessWrong = true) {
+		System.out.println("Your number is: " + guess);
+		guessWrong = false;
+		}
+	/*	while (guessWrong=true){
+		
+		if (guess>goal) {
+		System.out.println(guess);
+		min = min*2;
+		guess = (max+min)/2;
+		guessWrong = true;
+		}
+		else if (guess<goal) {
+		System.out.println(guess);
+		max = max/2;
+		guess=(max+min)/2;
+		guessWrong = true;
+		}
+		else if(guess==goal) {
+		System.out.println("The goal is: " + guess);
+		guessWrong = false;
+		}
+		else {
+		System.out.println("You cheated");
+		
+		}
+		}*/
+		System.out.println("Your number is: " + guess);
+		
+/*		int target = (int)(Math.random()*100 +1);
+		Scanner scanner = new Scanner(System.in);
+		int times = 1;
+		boolean guessWrong = true;
+		while (guessWrong) {
+		
+		System.out.println("Guess a number from 1 to 100: ");
+		int guess = scanner.nextInt();
+		
+			if (target > guess) {
+			System.out.println("You guessed wrong, your number is too low, guess higher.");
+			times++;
+			} else if (target < guess) {
+			System.out.println("You guessed wrong, your number is too high, guess lower.");
+			times++;
+			} else if (target == guess) {
+			System.out.println("You guessed right! " + "You took " + times + " times to find the number");
+			guessWrong = false;
+			} else {
+			System.out.println("You cheated");
+			}
+		}*/
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import java.util.Scanner;
+
+public class MyScanner{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int max = 100;
+		int min = 1;
+		System.out.println("What is a number from " + min + " to " + max);
+		int goal = scanner.nextInt();
+		int guess = (int)Math.ceil((max+min)/2);
+		boolean guessWrong = true;
+		
+		while (guessWrong) {
+		guess = (int)Math.ceil((max+min)/2);
+
+	//	System.out.println(guess);
+		if (guess==goal) {
+		System.out.println("Your number is: " + guess);//min++;//(int)Math.ceil((max+min)/2);
+		
+		break;
+		}
+		else if (guess>goal) {
+		max = guess;//max--;//(int)Math.ceil((max+min)/2);
+		break;
+		}
+		else if (guess<goal) {
+		min = guess;
+		break;
+		}
+		//guessWrong = true;
+		}
+
+	
+	}
+}
