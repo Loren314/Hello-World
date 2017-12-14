@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class money{
+	public static void main(String[] args){
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Type a money value: $");
+		int total = scanner.nextInt();
+		System.out.println("$" + total);
+		//int hundred = total
+		while (total>0) {
+		if();
+		//subtract money amounts from total
+		//$100
+		//$10
+		//$5
+		//$1
+		//$0.25
+		//$0.10
+		//$0.05
+		//$0.01
+	}
+}
