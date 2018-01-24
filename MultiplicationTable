@@ -1,0 +1,21 @@
+public class MultiplicationTable{
+	
+	public static void main(String[] args){
+		for (int c = 1; c < 11; c++) {
+			System.out.print(c + " | ");
+		}
+		System.out.println();
+		System.out.print("   ");
+		for (int d = 1; d < 42; d++) {
+			System.out.print("_");
+		}
+		System.out.println();
+		for (int a = 2; a < 11; a++){
+		System.out.print(a + " || ");
+			for (int b = 2; b < 11; b++) {
+			System.out.print(a*b + " | ");
+			}
+		System.out.println();
+		}
+	}
+}
